@@ -313,9 +313,9 @@ class TestPawns:
         assert Square.at(4, 5) not in moves
 
     @staticmethod
-    def test_black_pawns_can_capture_diagonally():
+    def test_black_pawns_cannot_move_diagonally_except_to_capture():
 
-         # Arrange
+        # Arrange
         board = Board.empty()
         pawn = Pawn(Player.BLACK)
         pawn_square = Square.at(3, 4)
