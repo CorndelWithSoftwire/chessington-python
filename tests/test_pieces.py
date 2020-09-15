@@ -144,10 +144,10 @@ class TestPawns:
         # Arrange
         board = Board.empty()
         pawn = Pawn(Player.WHITE)
-        pawn_square = Square.at(4, 4)
+        pawn_square = Square.at(1, 4)
         board.set_piece(pawn_square, pawn)
 
-        obstructing_square = Square.at(6, 4)
+        obstructing_square = Square.at(3, 4)
         obstruction = Pawn(Player.BLACK)
         board.set_piece(obstructing_square, obstruction)
 
@@ -163,10 +163,10 @@ class TestPawns:
         # Arrange
         board = Board.empty()
         pawn = Pawn(Player.BLACK)
-        pawn_square = Square.at(4, 4)
+        pawn_square = Square.at(6, 4)
         board.set_piece(pawn_square, pawn)
 
-        obstructing_square = Square.at(2, 4)
+        obstructing_square = Square.at(4, 4)
         obstruction = Pawn(Player.WHITE)
         board.set_piece(obstructing_square, obstruction)
 
